@@ -30,9 +30,23 @@ namespace AsyncAwait {
         }
 
         private async void btnAsync_Click(object sender, EventArgs e) {
-            var jobResult = await Task.Run(() => DoJob("async"));
             // await를 만나면 작업을 비동기 적으로 실행하고 제어권을 호출자에게 넘겨준다.
             // 비동기 작업 완료되면 결과값을 리턴하고 제어권은 가져와서 이후의 코드를 실행한다.
+            var jobResult = await Task.Run(() => DoJob("async await"));
+            this.Text = jobResult;
+        }
+
+        private Task<string> DoJobAsync(string jobName) {
+            return Task.Run(() => DoJob(jobName));
+        }
+
+        private void btnTask_Click(object sender, EventArgs e) {
+            Task.Run(() => DoJob("task continueWith"))
+                .ContinueWith(task => this.Text = task.Result);
+        }
+
+        private async void btnAsync2_Click(object sender, EventArgs e) {
+            var jobResult = await DoJobAsync("async await 2");
             this.Text = jobResult;
         }
     }

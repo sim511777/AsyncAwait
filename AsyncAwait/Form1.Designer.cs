@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             this.btnSync = new System.Windows.Forms.Button();
             this.btnAsync = new System.Windows.Forms.Button();
+            this.btnTask = new System.Windows.Forms.Button();
+            this.btnAsync2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSync
@@ -47,11 +49,33 @@
             this.btnAsync.UseVisualStyleBackColor = true;
             this.btnAsync.Click += new System.EventHandler(this.btnAsync_Click);
             // 
+            // btnTask
+            // 
+            this.btnTask.Location = new System.Drawing.Point(198, 12);
+            this.btnTask.Name = "btnTask";
+            this.btnTask.Size = new System.Drawing.Size(75, 23);
+            this.btnTask.TabIndex = 2;
+            this.btnTask.Text = "Task";
+            this.btnTask.UseVisualStyleBackColor = true;
+            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
+            // 
+            // btnAsync2
+            // 
+            this.btnAsync2.Location = new System.Drawing.Point(93, 41);
+            this.btnAsync2.Name = "btnAsync2";
+            this.btnAsync2.Size = new System.Drawing.Size(99, 23);
+            this.btnAsync2.TabIndex = 4;
+            this.btnAsync2.Text = "Work async 2";
+            this.btnAsync2.UseVisualStyleBackColor = true;
+            this.btnAsync2.Click += new System.EventHandler(this.btnAsync2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAsync2);
+            this.Controls.Add(this.btnTask);
             this.Controls.Add(this.btnAsync);
             this.Controls.Add(this.btnSync);
             this.Name = "Form1";
@@ -64,6 +88,8 @@
 
         private System.Windows.Forms.Button btnSync;
         private System.Windows.Forms.Button btnAsync;
+        private System.Windows.Forms.Button btnTask;
+        private System.Windows.Forms.Button btnAsync2;
     }
 }
 
