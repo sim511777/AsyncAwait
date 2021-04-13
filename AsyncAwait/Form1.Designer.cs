@@ -26,55 +26,55 @@
             this.btnSync = new System.Windows.Forms.Button();
             this.btnAsync = new System.Windows.Forms.Button();
             this.btnTask = new System.Windows.Forms.Button();
-            this.btnAsync2 = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSync
             // 
             this.btnSync.Location = new System.Drawing.Point(12, 12);
             this.btnSync.Name = "btnSync";
-            this.btnSync.Size = new System.Drawing.Size(75, 23);
+            this.btnSync.Size = new System.Drawing.Size(115, 35);
             this.btnSync.TabIndex = 0;
-            this.btnSync.Text = "Work sync";
+            this.btnSync.Text = "Run sync";
             this.btnSync.UseVisualStyleBackColor = true;
             this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
             // 
             // btnAsync
             // 
-            this.btnAsync.Location = new System.Drawing.Point(93, 12);
+            this.btnAsync.Location = new System.Drawing.Point(133, 12);
             this.btnAsync.Name = "btnAsync";
-            this.btnAsync.Size = new System.Drawing.Size(99, 23);
+            this.btnAsync.Size = new System.Drawing.Size(115, 35);
             this.btnAsync.TabIndex = 1;
-            this.btnAsync.Text = "Work async";
+            this.btnAsync.Text = "Run async/await";
             this.btnAsync.UseVisualStyleBackColor = true;
             this.btnAsync.Click += new System.EventHandler(this.btnAsync_Click);
             // 
             // btnTask
             // 
-            this.btnTask.Location = new System.Drawing.Point(198, 12);
+            this.btnTask.Location = new System.Drawing.Point(254, 12);
             this.btnTask.Name = "btnTask";
-            this.btnTask.Size = new System.Drawing.Size(75, 23);
+            this.btnTask.Size = new System.Drawing.Size(115, 35);
             this.btnTask.TabIndex = 2;
-            this.btnTask.Text = "Task";
+            this.btnTask.Text = "Run Task";
             this.btnTask.UseVisualStyleBackColor = true;
             this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
             // 
-            // btnAsync2
+            // lblResult
             // 
-            this.btnAsync2.Location = new System.Drawing.Point(93, 41);
-            this.btnAsync2.Name = "btnAsync2";
-            this.btnAsync2.Size = new System.Drawing.Size(99, 23);
-            this.btnAsync2.TabIndex = 4;
-            this.btnAsync2.Text = "Work async 2";
-            this.btnAsync2.UseVisualStyleBackColor = true;
-            this.btnAsync2.Click += new System.EventHandler(this.btnAsync2_Click);
+            this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblResult.Location = new System.Drawing.Point(12, 66);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(357, 31);
+            this.lblResult.TabIndex = 3;
+            this.lblResult.Text = "result";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAsync2);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnTask);
             this.Controls.Add(this.btnAsync);
             this.Controls.Add(this.btnSync);
@@ -89,7 +89,7 @@
         private System.Windows.Forms.Button btnSync;
         private System.Windows.Forms.Button btnAsync;
         private System.Windows.Forms.Button btnTask;
-        private System.Windows.Forms.Button btnAsync2;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
